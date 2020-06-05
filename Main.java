@@ -39,10 +39,7 @@ public class Main {
         int res = (int)Math.ceil((double)((h - a) / (a - b))) + 1;
         System.out.println("task5 " + res);
     }
-    public static void task6 (int a, int b){
-        int res = (((a + b) / b - 1) * a + ((a + b)/a - 1) * b) / ( a / b + b / a);
-        System.out.println("task6 " + res);
-    }
+
     public static void task7 (int x1, int y1, int x2, int y2){
        String res = (x1 == x2) || (y2 == y1) ? "YES" : "NO";
         System.out.println("task7 " + res);
