@@ -6,7 +6,7 @@ public class Main {
         task3(2, 2, 50, 3, 1, 59);
         task4(360, 500);
         task5(20, 5, 2);
-        task6(5, 8);
+        //task6(5, 8);
         task7(2, 7, 6, 7);
         task8(2,5,5);
         int [] arr = {2,3,5,9,7};
@@ -15,9 +15,9 @@ public class Main {
 
     }
     public static void task1 (int a, int b){
-        int temp = b;
-        b = a;
-        a = temp;
+        a = a + b; 
+        b = a - b; 
+        a = a - b; 
         System.out.println("task1 " + a + " " + b);
     }
     public static void task2 (int lesson){
@@ -36,7 +36,7 @@ public class Main {
         System.out.println("task4 " + days);
     }
     public static void task5 (int h, int a, int b){
-        int res = (int)Math.ceil((double)((h - a) / (a - b))) + 1;
+        int res = (h - a) / (a - b) + 1;
         System.out.println("task5 " + res);
     }
 
